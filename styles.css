@@ -1,0 +1,27 @@
+.grid {
+    display: flex;
+    /* <--- required */
+    flex-wrap: wrap;
+}
+
+.column {
+    flex: 1;
+    /* <--- required (style column to fill the same space as the other columns) */
+}
+
+.row {
+    /* flex: 1;
+    margin: 2px;
+    text-align: center; */
+    /* background: gold; */
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    flex-shrink: 0;
+    flex-basis: auto;
+    margin: 4px;
+    padding: 0.75rem;
+    border: 1px solid olivedrab;
+}
