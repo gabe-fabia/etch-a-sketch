@@ -1,5 +1,5 @@
-const columns = 16;
-const rows = 16;
+const columns = 23;
+const rows = 23;
 
 const grid = document.createElement('div');
 grid.className = 'grid';
@@ -29,8 +29,17 @@ body.appendChild(grid);
 const tiles = document.querySelectorAll('.row');
 console.log(tiles);
 
-var mouseOverFunction = function() {
-    this.style.color = 'black';
-}
+tiles.forEach(function (tile) {
+    tile.addEventListener('mouseover', (e) => {
+        e.target.style.backgroundColor = 'black';
+    });
+});
 
-grid.onmouseover = mouseOverFunction;
+
+const resetButton = document.querySelector('#resetButton');
+
+resetButton.addEventListener('click', () => {
+    tiles.forEach(function (tile) {
+        tile.style.backgroundColor = 'white';
+    });
+});
