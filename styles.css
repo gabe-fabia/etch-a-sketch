@@ -2,36 +2,26 @@ body {
     font-family: 'Courier New', monospace;
 }
 
-#resetButton {
+button {
     
     font-family: 'Courier New', Courier, monospace;
 }
 
 
 .grid {
-    display: flex;
-    /* <--- required */
-    flex-wrap: wrap;
+    background-color: white;
+    width: 750px;
+    height: 750px;
 }
 
 .column {
-    flex: 1;
-    /* <--- required (style column to fill the same space as the other columns) */
+    display: flex;
 }
 
 .row {
-    /* flex: 1;
-    margin: 2px;
-    text-align: center; */
-    /* background: gold; */
-
     display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-grow: 1;
-    flex-shrink: 0;
-    flex-basis: auto;
-    /* margin: 4px; */
-    padding: 0.75rem;
-    border: 1px solid olivedrab;
+    flex: 1;
+    flex-direction: column;
+    aspect-ratio: 1 / 1;
+    /* border: 1px solid olivedrab; */
 }
