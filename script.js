@@ -31,7 +31,7 @@ const pixelButton = document.querySelector('#changePixels');
 pixelButton.addEventListener('click', () => {
     let newPixels = prompt("How many tiles do you want? (1 to 100)");
 
-    if (newPixels < 1 || newPixels >= 100) {
+    if (newPixels < 1 || newPixels > 100) {
         alert("Please enter a number between 1 and 100");
         newPixels;
     }
